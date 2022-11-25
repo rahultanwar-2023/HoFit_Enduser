@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HoFit</string>
+
+
+    //OnBoarding Screen Title
+    <string name="onboardTitle1">One PASS - Multiple Entry</string>
+    <string name="onboardTitle2">Easy To Use</string>
+    <string name="onboardTitle3">Expert Guidance</string>
+    <string name="onboardTitle4">Shareable Days</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="one_key">ONE <font color='#FF843F'>KEY</font></string>
+    <string name="one_key_headline">Get access to <font color='#FF843F'>all sports</font> at all centers</string>
+    <string name="one_key_another">One <font color='#F2785C'>Key</font></string>
+    <string name="fitness_activity_title">Fitness <font color='#F2785C'>Activity</font></string>
+    <string name="near_by_centers">Near By <font color='#F2785C'>Centers</font></string>
+
+    <string name="detail_category">Activity <font color='#F2785C'>%1$s</font></string>
+
+    //Twelve Month Plan
+    <string name="twelve_month_main_rate">₹35099</string>
+    <string name="twelve_month_discount_rate">₹14990</string>
+    <string name="twelve_month_on_emi_rate">₹1490/month</string>
+    <string name="twelve">12</string>
+
+    //Six Month Plan
+    <string name="six_month_main_rate">₹17590</string>
+    <string name="six_month_discount_rate">₹8990</string>
+    <string name="six_month_on_emi_rate">₹1690/month</string>
+    <string name="six">06</string>
+
+    //Three Month Plan
+    <string name="three_month_main_rate">₹13090</string>
+    <string name="three_month_discount_rate">₹7990</string>
+    <string name="three_month_on_emi_rate">₹1890/month</string>
+    <string name="three">03</string>
+
+    //One Month Plan
+    <string name="one_month_on_emi_rate">₹2090/month</string>
+    <string name="one">01</string>
+    <string name="show_booking_center_name">You Are Currently Booking %1$s Session At %2$s</string>
+
+
+</resources>

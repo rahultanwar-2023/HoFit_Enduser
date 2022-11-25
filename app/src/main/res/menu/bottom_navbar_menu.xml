@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/oneKey"
+        android:icon="@drawable/key_24"
+        android:title="One Key" />
+    <item
+        android:id="@+id/paySession"
+        android:icon="@drawable/wallet_24"
+        android:title="Pay Per Session" />
+    <item
+        android:id="@+id/userSettings"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+</menu>

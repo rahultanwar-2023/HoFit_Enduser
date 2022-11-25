@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/onboarding_Pager"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:layout_constraintBottom_toTopOf="@+id/pagerSlider_indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pagerSlider_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/btn_getStarted"
+            app:layout_constraintEnd_toEndOf="@+id/onboarding_Pager"
+            app:layout_constraintStart_toStartOf="@+id/onboarding_Pager"
+            app:layout_constraintTop_toBottomOf="@+id/onboarding_Pager"
+            app:tabBackground="@drawable/indicator_selector"
+            app:tabIndicatorHeight="0dp" />
+
+        <Button
+            android:id="@+id/btn_getStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/pagerSlider_indicator"
+            app:layout_constraintStart_toStartOf="@+id/pagerSlider_indicator"
+            app:layout_constraintTop_toBottomOf="@+id/pagerSlider_indicator" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_forward"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_getStarted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_getStarted"
+            app:layout_constraintTop_toTopOf="@+id/btn_getStarted"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "391296928238",
+    "project_id": "hofit-ede12",
+    "storage_bucket": "hofit-ede12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391296928238:android:f776dc6928236e187c66ff",
+        "android_client_info": {
+          "package_name": "com.hofit.hofituser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391296928238-p8gtmci398tjd7mgpe2r2kjl56af9n5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hofit.hofituser",
+            "certificate_hash": "92d45704f24582d23d76212048996aca19c62332"
+          }
+        },
+        {
+          "client_id": "391296928238-m6u44flbpg2tak0ofl8bgb99henq0cf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Dg-xbrYt6K4e0pDC8VoR56h-a6IszoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391296928238-m6u44flbpg2tak0ofl8bgb99henq0cf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

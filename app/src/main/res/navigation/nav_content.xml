@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_content"
+    app:startDestination="@id/userHome">
+
+    <fragment
+        android:id="@+id/oneKey"
+        android:name="com.hofit.hofituser.OneKey"
+        android:label="fragment_one_key"
+        tools:layout="@layout/fragment_one_key" />
+    <fragment
+        android:id="@+id/paySession"
+        android:name="com.hofit.hofituser.PaySession"
+        android:label="fragment_pay_session"
+        tools:layout="@layout/fragment_pay_session" >
+        <action
+            android:id="@+id/action_paySession_to_centerFullDetails2"
+            app:destination="@id/centerFullDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/userHome"
+        android:name="com.hofit.hofituser.UserHome"
+        android:label="fragment_user_home"
+        tools:layout="@layout/fragment_user_home" >
+        <action
+            android:id="@+id/action_userHome_to_allCate"
+            app:destination="@id/allCate" />
+        <action
+            android:id="@+id/action_userHome_to_allCenters"
+            app:destination="@id/allCenters" />
+        <action
+            android:id="@+id/action_userHome_to_detailsCategory"
+            app:destination="@id/detailsCategory" />
+        <argument
+            android:name="category_pass"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_userHome_to_centerFullDetails2"
+            app:destination="@id/centerFullDetails2" />
+        <argument
+            android:name="center_city"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSettings"
+        android:name="com.hofit.hofituser.UserSettings"
+        android:label="fragment_user_settings"
+        tools:layout="@layout/fragment_user_settings" >
+        <action
+            android:id="@+id/action_userSettings_to_oneKey"
+            app:destination="@id/oneKey" />
+    </fragment>
+    <fragment
+        android:id="@+id/allCate"
+        android:name="com.hofit.hofituser.AllCate"
+        android:label="fragment_all_cate"
+        tools:layout="@layout/fragment_all_cate" >
+        <action
+            android:id="@+id/action_allCate_to_userHome"
+            app:destination="@id/userHome"
+            app:popUpTo="@id/allCate"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_allCate_to_detailsCategory"
+            app:destination="@id/detailsCategory" />
+    </fragment>
+    <fragment
+        android:id="@+id/allCenters"
+        android:name="com.hofit.hofituser.AllCenters"
+        android:label="fragment_all_centers"
+        tools:layout="@layout/fragment_all_centers" >
+        <action
+            android:id="@+id/action_allCenters_to_userHome"
+            app:destination="@id/userHome"
+            app:popUpTo="@id/allCenters"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_allCenters_to_centerFullDetails2"
+            app:destination="@id/centerFullDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsCategory"
+        android:name="com.hofit.hofituser.DetailsCategory"
+        android:label="fragment_details_category"
+        tools:layout="@layout/fragment_details_category" >
+        <action
+            android:id="@+id/action_detailsCategory_to_centerFullDetails2"
+            app:destination="@id/centerFullDetails2" />
+        <argument
+            android:name="data_send"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/centerFullDetails2"
+        android:name="com.hofit.hofituser.CenterFullDetails"
+        android:label="fragment_center_full_details"
+        tools:layout="@layout/fragment_center_full_details" />
+</navigation>

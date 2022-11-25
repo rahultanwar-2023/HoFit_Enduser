@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/backarrow.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.1225" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/button_back.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/home_24.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_back.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_calendar.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_check.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_down.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_edit_user.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_forward.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_home.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_ticket.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_time.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/ic_user.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/image_back.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/indicator_selector.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/info.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/key_24.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/marker_24.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/profile_edit.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/radio_normal.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/radio_selected.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/radio_selector.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/rounded_dialog.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/search_view_back.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/selected.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/shopping.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/strikethrough.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/tab_indicator.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/text_back_round.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/text_color.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/unselected.xml" value="0.2375" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/user_24.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/drawable/wallet_24.xml" value="0.2385" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_all_category.xml" value="0.21822916666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_all_center.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_center_proceed.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_check_internet.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_network_check.xml" value="0.2" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_order_purchase.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_order_summary.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_pass_manage.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_payment_pass.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_profile_creation.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_user_booking.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/activity_user_main_page.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/custom_toolbar.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_all_cate.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_all_categories.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_all_centers.xml" value="0.2" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_cancel_bookings.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_center_full_details.xml" value="0.2" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_check_internet.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_complete_sessions.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_details_category.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_internet_connection.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_o_t_p_verify.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_on_boarding.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_one_key.xml" value="0.2" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_pay_session.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_upcoming_sessions.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_user_home.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_user_info.xml" value="0.2" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_user_location.xml" value="0.176" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_user_registration.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/fragment_user_settings.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_categories.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_centerimages_shower.xml" value="0.23125" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_centers.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_image.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_service.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/item_session.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/layout_pass_design.xml" value="0.47547974413646055" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/layout_time_slot.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/layout_timing.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/layout_user_registration.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/onboarding_layout.xml" value="0.23229166666666667" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/select_time_slot.xml" value="0.264" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/show_active_time.xml" value="0.44644644644644643" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/layout/show_days.xml" value="0.4" />
+        <entry key="..\:/Hofit/Application/AndroidApp/Hofit/app/src/main/res/menu/bottom_navbar_menu.xml" value="0.23125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.23229166666666667" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

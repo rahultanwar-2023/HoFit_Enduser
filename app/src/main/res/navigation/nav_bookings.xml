@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bookings"
+    app:startDestination="@id/upcomingSessions">
+
+    <fragment
+        android:id="@+id/upcomingSessions"
+        android:name="com.hofit.hofituser.UpcomingSessions"
+        android:label="fragment_upcoming_sessions"
+        tools:layout="@layout/fragment_upcoming_sessions" />
+    <fragment
+        android:id="@+id/completeSessions"
+        android:name="com.hofit.hofituser.CompleteSessions"
+        android:label="fragment_complete_sessions"
+        tools:layout="@layout/fragment_complete_sessions" />
+    <fragment
+        android:id="@+id/cancelBookings"
+        android:name="com.hofit.hofituser.CancelBookings"
+        android:label="fragment_cancel_bookings"
+        tools:layout="@layout/fragment_cancel_bookings" />
+</navigation>

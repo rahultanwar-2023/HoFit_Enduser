@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/interaction_1"
+    app:startDestination="@id/onBoarding">
+
+    <fragment
+        android:id="@+id/onBoarding"
+        android:name="com.hofit.hofituser.OnBoarding"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoarding_to_OTPVerify"
+            app:destination="@id/OTPVerify" />
+        <argument
+            android:name="stringValue"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_onBoarding_to_userLocation"
+            app:destination="@id/userLocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPVerify"
+        android:name="com.hofit.hofituser.OTPVerify"
+        android:label="fragment_o_t_p_verify"
+        tools:layout="@layout/fragment_o_t_p_verify" >
+        <action
+            android:id="@+id/action_OTPVerify_to_userLocation"
+            app:destination="@id/userLocation" />
+        <action
+            android:id="@+id/action_OTPVerify_to_onBoarding"
+            app:destination="@id/onBoarding"
+            app:popUpTo="@id/onBoarding"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLocation"
+        android:name="com.hofit.hofituser.UserLocation"
+        android:label="fragment_user_location"
+        tools:layout="@layout/fragment_user_location" />
+</navigation>
