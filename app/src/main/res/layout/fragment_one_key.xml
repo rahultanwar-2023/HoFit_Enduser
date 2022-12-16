@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OneKey">
+    tools:context=".ui.fragment.user_dashboard.OneKey">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/key_viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="220dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

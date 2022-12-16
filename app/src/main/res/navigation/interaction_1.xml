@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/onBoarding"
-        android:name="com.hofit.hofituser.OnBoarding"
+        android:name="com.hofit.hofituser.ui.fragment.user_registration.OnBoarding"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/OTPVerify"
-        android:name="com.hofit.hofituser.OTPVerify"
+        android:name="com.hofit.hofituser.ui.fragment.user_registration.OTPVerify"
         android:label="fragment_o_t_p_verify"
         tools:layout="@layout/fragment_o_t_p_verify" >
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/userLocation"
-        android:name="com.hofit.hofituser.UserLocation"
+        android:name="com.hofit.hofituser.ui.fragment.user_location.UserLocation"
         android:label="fragment_user_location"
         tools:layout="@layout/fragment_user_location" />
 </navigation>

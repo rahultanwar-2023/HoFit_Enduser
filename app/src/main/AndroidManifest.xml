@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name=".utils.BaseApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,7 +17,7 @@
         android:theme="@style/Theme.HoFit"
         tools:targetApi="31">
         <activity
-            android:name=".NetworkCheck"
+            android:name=".ui.NetworkCheck"
             android:exported="true"
             android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
@@ -28,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PassManage"
+            android:name=".ui.fragment.user_manage.PassManage"
             android:exported="false" />
         <activity
             android:name=".PaymentPass"
@@ -37,16 +36,16 @@
             android:name=".OrderSummary"
             android:exported="false" />
         <activity
-            android:name=".UserBooking"
+            android:name=".ui.fragment.user_dashboard.booking_summary.UserBooking"
             android:exported="false" />
         <activity
-            android:name=".ProfileCreation"
+            android:name=".ui.fragment.user_dashboard.profile_create.ProfileCreation"
             android:exported="false" />
         <activity
-            android:name=".UserMainPage"
+            android:name=".ui.UserMainPage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="false"/>
     </application>
 

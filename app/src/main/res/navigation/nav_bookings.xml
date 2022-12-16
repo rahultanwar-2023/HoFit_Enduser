@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/upcomingSessions"
-        android:name="com.hofit.hofituser.UpcomingSessions"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.booking_summary.booking_status.UpcomingSessions"
         android:label="fragment_upcoming_sessions"
         tools:layout="@layout/fragment_upcoming_sessions" />
     <fragment
         android:id="@+id/completeSessions"
-        android:name="com.hofit.hofituser.CompleteSessions"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.booking_summary.booking_status.CompleteSessions"
         android:label="fragment_complete_sessions"
         tools:layout="@layout/fragment_complete_sessions" />
     <fragment
         android:id="@+id/cancelBookings"
-        android:name="com.hofit.hofituser.CancelBookings"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.booking_summary.booking_status.CancelBookings"
         android:label="fragment_cancel_bookings"
         tools:layout="@layout/fragment_cancel_bookings" />
 </navigation>

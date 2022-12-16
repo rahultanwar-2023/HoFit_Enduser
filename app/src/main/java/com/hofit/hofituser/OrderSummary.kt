@@ -27,6 +27,7 @@ class OrderSummary : AppCompatActivity() {
 
     private var centerType: String? = null
     private var centerName: String? = null
+    private var centerAddress: String? = null
 
     private var combinedDateTIme: String? = null
 
@@ -47,8 +48,9 @@ class OrderSummary : AppCompatActivity() {
         setContentView(R.layout.activity_order_summary)
         init()
 
-        centerType = intent.getStringExtra("center_category")
-        centerName = intent.getStringExtra("center_name")
+        centerType = intent.getStringExtra("outlet_category")
+        centerName = intent.getStringExtra("outlet_name")
+        centerAddress = intent.getStringExtra("outlet_address")
 
         val orderDate = intent.getStringExtra("order_date")
         val orderTime = intent.getStringExtra("order_time")
@@ -132,8 +134,9 @@ class OrderSummary : AppCompatActivity() {
         val userData = hashMapOf(
             "booking_id" to id,
             "booking_type" to "free_trial",
-            "center_type" to centerType,
-            "center_name" to centerName,
+            "outlet_type" to centerType,
+            "outlet_name" to centerName,
+            "outlet_address" to centerAddress,
             "session_schedule" to combinedDateTIme,
             "user_name" to getName,
             "user_number" to "+91$getNumber",
@@ -142,6 +145,25 @@ class OrderSummary : AppCompatActivity() {
         )
 
         mFireStore.set(userData)
+
+        val mFireStore1 =
+            FirebaseFirestore.getInstance().collection("super_admin").document("rohit-20072022")
+                .collection("bookings").document()
+
+        val userData1 = hashMapOf(
+            "booking_id" to id,
+            "booking_type" to "free_trial",
+            "outlet_type" to centerType,
+            "outlet_name" to centerName,
+            "outlet_address" to centerAddress,
+            "session_schedule" to combinedDateTIme,
+            "user_name" to getName,
+            "user_number" to "+91$getNumber",
+            "user_email" to getEmail,
+            "session_amount" to totalAmount
+        )
+
+        mFireStore1.set(userData1)
 
     }
 

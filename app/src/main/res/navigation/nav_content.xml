@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/oneKey"
-        android:name="com.hofit.hofituser.OneKey"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.OneKey"
         android:label="fragment_one_key"
         tools:layout="@layout/fragment_one_key" />
     <fragment
         android:id="@+id/paySession"
-        android:name="com.hofit.hofituser.PaySession"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.PaySession"
         android:label="fragment_pay_session"
         tools:layout="@layout/fragment_pay_session" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/userHome"
-        android:name="com.hofit.hofituser.UserHome"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.UserHome"
         android:label="fragment_user_home"
         tools:layout="@layout/fragment_user_home" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/userSettings"
-        android:name="com.hofit.hofituser.UserSettings"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.UserSettings"
         android:label="fragment_user_settings"
         tools:layout="@layout/fragment_user_settings" >
         <action
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/allCate"
-        android:name="com.hofit.hofituser.AllCate"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.outlet_details.AllCate"
         android:label="fragment_all_cate"
         tools:layout="@layout/fragment_all_cate" >
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/allCenters"
-        android:name="com.hofit.hofituser.AllCenters"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.outlet_details.AllCenters"
         android:label="fragment_all_centers"
         tools:layout="@layout/fragment_all_centers" >
         <action
@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsCategory"
-        android:name="com.hofit.hofituser.DetailsCategory"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.outlet_details.DetailsCategory"
         android:label="fragment_details_category"
         tools:layout="@layout/fragment_details_category" >
         <action
@@ -94,7 +94,7 @@
     </fragment>
     <fragment
         android:id="@+id/centerFullDetails2"
-        android:name="com.hofit.hofituser.CenterFullDetails"
+        android:name="com.hofit.hofituser.ui.fragment.user_dashboard.outlet_details.CenterFullDetails"
         android:label="fragment_center_full_details"
         tools:layout="@layout/fragment_center_full_details" />
 </navigation>

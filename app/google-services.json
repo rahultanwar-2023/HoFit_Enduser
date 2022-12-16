@@ -1,10 +1,40 @@
 {
   "project_info": {
     "project_number": "391296928238",
+    "firebase_url": "https://hofit-ede12-default-rtdb.firebaseio.com",
     "project_id": "hofit-ede12",
     "storage_bucket": "hofit-ede12.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391296928238:android:f7f62d74e73ab8a27c66ff",
+        "android_client_info": {
+          "package_name": "com.hofit.hofitclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391296928238-m6u44flbpg2tak0ofl8bgb99henq0cf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Dg-xbrYt6K4e0pDC8VoR56h-a6IszoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391296928238-m6u44flbpg2tak0ofl8bgb99henq0cf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:391296928238:android:f776dc6928236e187c66ff",

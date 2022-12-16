@@ -154,6 +154,45 @@
                     android:textAlignment="center"
                     android:textColor="@drawable/text_color" />
 
+                <RadioButton
+                    android:id="@+id/radioTime7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:padding="16dp"
+                    android:text="No Slot"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
+                <RadioButton
+                    android:id="@+id/radioTime8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:padding="16dp"
+                    android:text="No Slot"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
+                <RadioButton
+                    android:id="@+id/radioTime9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:padding="16dp"
+                    android:text="No Slot"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
             </RadioGroup>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
