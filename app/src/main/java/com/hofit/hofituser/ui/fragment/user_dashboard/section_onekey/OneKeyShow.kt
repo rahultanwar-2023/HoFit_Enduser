@@ -1,13 +1,11 @@
-package com.hofit.hofituser.ui.fragment.user_dashboard
+package com.hofit.hofituser.ui.fragment.user_dashboard.section_onekey
 
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
@@ -18,27 +16,20 @@ import com.hofit.hofituser.adapter.PromoAdapter
 import com.hofit.hofituser.models.PassModel
 import com.hofit.hofituser.models.PromoModel
 
-
-class OneKey : Fragment() {
+class OneKeyShow : AppCompatActivity() {
 
     private lateinit var viewPager2: ViewPager2
     private lateinit var handler: Handler
     private lateinit var keyAdapter: PromoAdapter
-    private val TAG = OneKey::class.java.simpleName
+    private val TAG = OneKeyShow::class.java.simpleName
 
     private lateinit var onePassAdapter: OnePassAdapter
     private lateinit var onePassRecyclerView: RecyclerView
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_one_key, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        viewPager2 = view.findViewById(R.id.key_viewPager)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_one_key)
+        viewPager2 = findViewById(R.id.key1_viewPager)
         handler = Handler(Looper.myLooper()!!)
         fetchPromoImages()
         viewPager2.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
@@ -50,13 +41,18 @@ class OneKey : Fragment() {
             }
         })
 
-        fetchPasses(view)
+        fetchPasses()
+
+        val backToMain = findViewById<ImageButton>(R.id.backToMain1)
+        backToMain.setOnClickListener {
+            finish()
+        }
 
     }
 
-    private fun fetchPasses(view: View) {
-        onePassRecyclerView = view.findViewById(R.id.recyclerview_show_pass)
-        onePassRecyclerView.layoutManager = LinearLayoutManager(view.context)
+    private fun fetchPasses() {
+        onePassRecyclerView = findViewById(R.id.recyclerview_show_pass1)
+        onePassRecyclerView.layoutManager = LinearLayoutManager(this)
         fetchPass()
     }
 
@@ -82,9 +78,22 @@ class OneKey : Fragment() {
                     val passContent3 = document.get("pass_content_3").toString()
                     val passContent4 = document.get("pass_content_4").toString()
                     val sessionLimit = document.get("pass_session_limit").toString()
-                    list.add(PassModel(passMonth, mainPriceInFormat, passDiscountInFormat, passEmiInFormat, passBill, passContent1, passContent2, passContent3, passContent4, sessionLimit))
+                    list.add(
+                        PassModel(
+                            passMonth,
+                            mainPriceInFormat,
+                            passDiscountInFormat,
+                            passEmiInFormat,
+                            passBill,
+                            passContent1,
+                            passContent2,
+                            passContent3,
+                            passContent4,
+                            sessionLimit
+                        )
+                    )
                 }
-                onePassAdapter = OnePassAdapter(requireContext(), list)
+                onePassAdapter = OnePassAdapter(this, list)
                 onePassRecyclerView.adapter = onePassAdapter
             }
             .addOnFailureListener { exception ->
@@ -100,14 +109,14 @@ class OneKey : Fragment() {
         val keyList = ArrayList<PromoModel>()
 
         FirebaseFirestore.getInstance().collection("super_admin").document("rohit-20072022")
-            .collection("oneKey_slider")
+            .collection("promotion_slider")
             .get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val keyImage = document.get("url").toString()
                     keyList.add(PromoModel(keyImage))
                 }
-                keyAdapter = PromoAdapter(requireContext(), keyList, viewPager2)
+                keyAdapter = PromoAdapter(this, keyList, viewPager2)
                 viewPager2.adapter = keyAdapter
             }
             .addOnFailureListener { exception ->
@@ -124,5 +133,4 @@ class OneKey : Fragment() {
         super.onResume()
         handler.postDelayed(runnable, 2000)
     }
-
 }

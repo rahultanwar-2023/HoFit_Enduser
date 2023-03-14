@@ -78,27 +78,27 @@ class OnBoarding : Fragment() {
         onBoardingData.add(
             OnBoardingData(
                 requireActivity().resources.getString(R.string.onboardTitle1),
-                R.drawable.onemorepass
+                R.drawable.onboard1
             )
         )
         onBoardingData.add(
             OnBoardingData(
                 requireActivity().resources.getString(R.string.onboardTitle2),
-                R.drawable.easytouse
+                R.drawable.onboard2
             )
         )
-        /*onBoardingData.add(
+        onBoardingData.add(
             OnBoardingData(
                 requireActivity().resources.getString(R.string.onboardTitle3),
-                R.drawable.bestguidence
+                R.drawable.onboard3
             )
         )
         onBoardingData.add(
             OnBoardingData(
                 requireActivity().resources.getString(R.string.onboardTitle4),
-                R.drawable.shareble
+                R.drawable.onboard4
             )
-        )*/
+        )
         setOnBoardingViewPagerAdapter(view, onBoardingData)
 
         position = onBoardViewPager!!.currentItem

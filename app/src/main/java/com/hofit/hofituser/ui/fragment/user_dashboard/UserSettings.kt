@@ -9,15 +9,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.hofit.hofituser.ui.fragment.user_manage.PassManage
-import com.hofit.hofituser.ui.fragment.user_dashboard.profile_create.ProfileCreation
 import com.hofit.hofituser.R
-import com.hofit.hofituser.ui.fragment.user_dashboard.booking_summary.UserBooking
 import com.hofit.hofituser.ui.MainActivity
+import com.hofit.hofituser.ui.fragment.user_dashboard.booking_summary.UserBooking
+import com.hofit.hofituser.ui.fragment.user_dashboard.profile_create.ProfileCreation
+import com.hofit.hofituser.ui.fragment.user_dashboard.section_onekey.OneKeyShow
+import com.hofit.hofituser.ui.fragment.user_manage.PassManage
 
 
 class UserSettings : Fragment() {
@@ -73,7 +73,8 @@ class UserSettings : Fragment() {
         }
 
         mBuyKey.setOnClickListener {
-            findNavController().navigate(R.id.action_userSettings_to_oneKey)
+            val intent = Intent(view.context, OneKeyShow::class.java)
+            startActivity(intent)
         }
 
         mBookings.setOnClickListener {

@@ -15,12 +15,8 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContentProviderCompat.requireContext
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.razorpay.Checkout
@@ -148,7 +144,8 @@ class PaymentPass : AppCompatActivity(), PaymentResultListener {
         mPassStartDate.text = formatted
 
         mPassActualPrice.text = getPassActualPrice
-        mPassDiscountPrice.text = getPassDiscountPrice
+        //mPassDiscountPrice.text = getPassDiscountPrice
+        mPassPayableAmount.text = getPassDiscountPrice
 
         val startIndex = 1
         val endIndexActualPrice = getPassActualPrice!!.length
@@ -158,9 +155,10 @@ class PaymentPass : AppCompatActivity(), PaymentResultListener {
 
         val passPayableAmount = substring1.toInt() - substring2.toInt()
 
-        val payableAmount = "₹$passPayableAmount"
+        val discount = "₹$passPayableAmount"
 
-        mPassPayableAmount.text = getPassDiscountPrice
+        mPassDiscountPrice.text = discount
+
     }
 
     private fun showSessionLayout() {
@@ -180,7 +178,6 @@ class PaymentPass : AppCompatActivity(), PaymentResultListener {
         mSessionDate.text = getSessionDate
         combinedDateTIme = getSessionDate
         mPassActualPrice.text = getSessionAmount
-        mPassDiscountPrice.text = getSessionDiscountAmount
 
         val startIndex = 1
         val endIndexActualPrice = getSessionAmount.length
@@ -189,6 +186,7 @@ class PaymentPass : AppCompatActivity(), PaymentResultListener {
         val substring2 = getSessionDiscountAmount.subSequence(startIndex, endIndexDiscountPrice).toString()
 
         val passPayableAmount = substring1.toInt() - substring2.toInt()
+
         totalPayableAmount = passPayableAmount.toString()
         val payableAmount = "₹$passPayableAmount"
 

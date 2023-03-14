@@ -73,6 +73,7 @@ class UserMainPage : AppCompatActivity() {
                     userCityShow.text = city
                     fireBase
                         .whereEqualTo("outlet_city", city)
+                        .whereEqualTo("outlet_regis_status", "Verified")
                         .get()
                         .addOnCompleteListener {
                             if (it.isSuccessful) {

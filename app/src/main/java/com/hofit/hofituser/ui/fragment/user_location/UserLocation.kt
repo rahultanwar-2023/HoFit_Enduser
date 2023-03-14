@@ -37,6 +37,7 @@ import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.util.*
@@ -77,6 +78,7 @@ class UserLocation : Fragment() {
         return inflater.inflate(R.layout.fragment_user_location, container, false)
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -96,8 +98,10 @@ class UserLocation : Fragment() {
                 val fullAddress = addressList?.get(0)?.getAddressLine(0)
                 val locality = addressList?.get(0)?.locality
                 GlobalScope.launch {
-                    dataStoreImpl.storeLocation(locality!!)
-                    saveLocationToStore(fullAddress!!, locality)
+                    if (locality != null) {
+                        saveLocationToStore(fullAddress!!, locality)
+                        dataStoreImpl.storeLocation(locality)
+                    }
                 }
             }
         }
@@ -114,7 +118,7 @@ class UserLocation : Fragment() {
         val buttonLocation = view.findViewById<Button>(R.id.location_detect)
         buttonLocation.setOnClickListener {
             Dexter.withContext(requireActivity())
-                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                .withPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
                 .withListener(object : PermissionListener {
                     override fun onPermissionGranted(permissionGrantedResponse: PermissionGrantedResponse) {
                         mRequestingLocationUpdates = true
@@ -213,7 +217,7 @@ class UserLocation : Fragment() {
         val permissionState =
             ContextCompat.checkSelfPermission(
                 requireActivity(),
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.ACCESS_COARSE_LOCATION
             )
         return permissionState == PackageManager.PERMISSION_GRANTED
     }

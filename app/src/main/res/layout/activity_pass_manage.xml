@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.user_manage.PassManage">
 
-
     <ImageButton
         android:id="@+id/backToSettings1"
         android:layout_width="wrap_content"
