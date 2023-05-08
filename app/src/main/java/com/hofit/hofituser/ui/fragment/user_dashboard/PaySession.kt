@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.hofit.hofituser.PaymentPass
 import com.hofit.hofituser.R
-import com.hofit.hofituser.models.SessionModel
 import com.hofit.hofituser.adapter.SessionAdapter
+import com.hofit.hofituser.models.SessionModel
 
 class PaySession : Fragment(){
 
@@ -30,15 +30,14 @@ class PaySession : Fragment(){
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_pay_session, container, false)
-        init(view)
-        fetchCenter()
-        return view
+        return inflater.inflate(R.layout.fragment_pay_session, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         performSearch()
+        init(view)
+        fetchCenter()
     }
 
     private fun init(view: View) {

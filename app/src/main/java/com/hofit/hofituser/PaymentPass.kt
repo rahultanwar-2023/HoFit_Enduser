@@ -223,7 +223,6 @@ class PaymentPass : AppCompatActivity(), PaymentResultListener {
 
     }
 
-
     //-----------------Payment Process ------------------
 
     private fun proceedToPayment() {

@@ -43,11 +43,6 @@ class UserHome : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        dataStoreImpl = DataStoreImpl(requireContext())
-//
-//        dataStoreImpl.locationFlow.asLiveData().observe(viewLifecycleOwner) {
-//            getUserCity = it
-//        }
         return inflater.inflate(R.layout.fragment_user_home, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

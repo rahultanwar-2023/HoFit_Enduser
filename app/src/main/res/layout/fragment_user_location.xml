@@ -42,22 +42,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Set your location to start exploring centers around you."
+            android:text="Getting your location to start exploring centers around you."
             android:textAlignment="center"
             android:textSize="19sp"
-            app:layout_constraintBottom_toTopOf="@+id/location_detect"
+            app:layout_constraintBottom_toTopOf="@+id/location_detect_bar"
             app:layout_constraintEnd_toEndOf="@+id/textView6"
             app:layout_constraintStart_toStartOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-        <Button
-            android:id="@+id/location_detect"
+        <ProgressBar
+            android:id="@+id/location_detect_bar"
             android:layout_width="0dp"
+            android:visibility="invisible"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Detect Current Location"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintEnd_toEndOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="@+id/textView7"

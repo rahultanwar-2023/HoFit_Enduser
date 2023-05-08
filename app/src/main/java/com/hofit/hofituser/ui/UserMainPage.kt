@@ -97,7 +97,6 @@ class UserMainPage : AppCompatActivity() {
                                     val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationBar)
                                     NavigationUI.setupWithNavController(bottomNavigationView, navController)
 
-
                                 } else {
                                     progressCircle.visibility = View.GONE
                                     layoutMain.visibility = View.VISIBLE

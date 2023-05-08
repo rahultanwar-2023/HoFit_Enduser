@@ -280,17 +280,20 @@ class CenterFullDetails : Fragment() {
     private fun fetchCenterImages() {
         val centerImageList = ArrayList<CenterImageModel>()
 
-        mDocReference.collection("outlet_images")
+        mDocReference.collection("outlet_images").document("images")
             .get()
             .addOnSuccessListener { result ->
-                for (document in result) {
-                    val keyImage = document.get("outlet_image").toString()
-                    centerImageList.add(CenterImageModel(keyImage))
-                    Log.i(
-                        TAG,
-                        keyImage
-                    )
-                }
+                val image1 = result.get("center_image_slider_1").toString()
+                centerImageList.add(CenterImageModel(image1))
+                val image2 = result.get("center_image_slider_2").toString()
+                centerImageList.add(CenterImageModel(image2))
+                val image3 = result.get("center_image_slider_3").toString()
+                centerImageList.add(CenterImageModel(image3))
+                val image4 = result.get("center_image_slider_4").toString()
+                centerImageList.add(CenterImageModel(image4))
+                val image5 = result.get("center_image_slider_5").toString()
+                centerImageList.add(CenterImageModel(image5))
+
                 mCenterImageAdapter = CenterImageAdapter(requireActivity(), centerImageList, viewPager3)
                 viewPager3.adapter = mCenterImageAdapter
             }
